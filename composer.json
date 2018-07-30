@@ -1,0 +1,30 @@
+{
+    "name": "newway/crm-common",
+    "description": "Common CRM helpers",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "YAAP",
+            "email": "yaapis@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": ">=5.5",
+        "illuminate/support": ">=5.5",
+        "tymon/jwt-auth": "1.0.0-rc.1",
+        "symfony/http-kernel": "~3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Newway\\CrmCommon\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Newway\\CrmCommon\\CrmCommonServiceProvider"
+            ]
+        }
+    }
+}
